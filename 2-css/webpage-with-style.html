@@ -6,33 +6,25 @@
     <title>Webpage With Style</title>
 
     <style type="text/css">
-
-        p {
-            text-align:right;
+        a {
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        a:visited {
+            color:green;
         }
 
-        div {
-            width: 200px;
-            height: 100px;
-            background-color: red;
-
-        }
-
-        .centered {
-            text-align:center;
-        }
     </style>
 
 </head>
 
 <body>
-
     <div>
-        <p>This text is</p>
-        <p class="centered">This is centered text</p>
+        <p><a href="http://google.com">This goes to google</a></p>
+        <p><a href="http://google.com" target="_blank">This goes to google in a new tab</a></p>
     </div>
-    
-
 </body>
 
 </html>
