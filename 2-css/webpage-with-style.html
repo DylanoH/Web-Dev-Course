@@ -6,29 +6,20 @@
     <title>Webpage With Style</title>
 
     <style type="text/css">
-        .bold {
-            font-weight: bold;
+
+        p {
+            text-align:right;
         }
 
-        .italic {
-            font-style: italic;
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+
         }
 
-        .underlined {
-            text-decoration: underline;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-            a:hover {
-                text-decoration: underline;
-                color: green;
-            }
-
-        .big {
-            font-size: 200%
+        .centered {
+            text-align:center;
         }
     </style>
 
@@ -36,15 +27,11 @@
 
 <body>
 
-    <p class="bold">This is some bold text!</p>
-
-    <p class="italic">This is some italic text! <span class="bold">And this is bold and italic.</span></p>
-
-    <p class="underlined">This text is underlined!</p>
-
-    <a href="">This is a non-underlined link</a>
-
-    <p class="big">This text is BIG!</p>
+    <div>
+        <p>This text is</p>
+        <p class="centered">This is centered text</p>
+    </div>
+    
 
 </body>
 
