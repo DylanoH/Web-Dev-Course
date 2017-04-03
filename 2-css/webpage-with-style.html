@@ -6,31 +6,29 @@
     <title>Webpage With Style</title>
 
     <style type="text/css">
-        .red {
-            color: red;
+        .bold {
+            font-weight: bold;
         }
 
-        .large {
-            font-size: 200%;
-        }
-
-        #green {
-            color: green;
+        .italic {
+            font-style: italic;
         }
 
         .underlined {
             text-decoration: underline;
         }
 
-        #first-section {
-            color: #4285F4;
-            background-color: #CEF6CE;
-            width: 200px;
+        a {
+            text-decoration: none;
         }
 
-        #second-section {
-            background-color: #8AB4F7;
-            width: 200px;
+            a:hover {
+                text-decoration: underline;
+                color: green;
+            }
+
+        .big {
+            font-size: 200%
         }
     </style>
 
@@ -38,23 +36,15 @@
 
 <body>
 
-    <div id="first-section">
+    <p class="bold">This is some bold text!</p>
 
-        <p>The quick brown fox jumped over the lazy dog.</p>
+    <p class="italic">This is some italic text! <span class="bold">And this is bold and italic.</span></p>
 
-        <p>Wow, I love internal CSS!</p>
+    <p class="underlined">This text is underlined!</p>
 
-    </div>
+    <a href="">This is a non-underlined link</a>
 
-    <div id="second-section">
-
-        <p id="green">This is some more text. <span class="underlined">And this text is underlined.</span></p>
-
-        <h1 class="red">CSS is cool!</h1>
-
-    </div>
-
-    <p>This paragraph is not floated</p>
+    <p class="big">This text is BIG!</p>
 
 </body>
 
