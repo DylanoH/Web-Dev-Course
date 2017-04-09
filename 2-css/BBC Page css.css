@@ -1,0 +1,25 @@
+body {
+     
+}
+
+#Top-Bar {
+    background-color: white;
+    height: 60px;
+}
+
+#bbclogo {
+    margin-left:200px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+#news-bar  {
+    background-color: #cc0000;
+    height: 50px;
+
+}
+
+#news-bar h1 {
+    color: white;
+    margin-left: 200px;
+}
