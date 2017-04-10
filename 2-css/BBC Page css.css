@@ -162,8 +162,14 @@ h3 {
 
 .clock {
     float: left;
-    margin-right: 3px;
-   
+    margin-right: 3px; 
+}
+.greyclock {
+    float: left;
+    margin-right: 3px; 
+    margin-top:-3px;
+    margin-left: -5px;
+    width: 25px;
 }
 
 .date {
@@ -190,7 +196,7 @@ h3 {
 #main-article {
     float:left;
     height: auto;
-    width: 600px;
+    width: 630px;
 }
 #title-stuff {
     height: 150px;
@@ -203,10 +209,20 @@ h3 {
 
 }
 
-.side-bar {
-    background-color: #CCCCCC;
+.side-bar-stories {
+    background-color:  #ebebeb;
     position: relative;
-    top: 16px;
+    top: 70px;
+    width: 300px;
+    height: auto;
+    float:right;
+
+}
+
+.side-bar-features {
+    background-color:  #ebebeb;
+    position: relative;
+    top: 100px;
     width: 300px;
     height: auto;
     float:right;
@@ -214,11 +230,28 @@ h3 {
 }
 
 #top-stories {
-
-    margin: 10px 40px 10px 10px;
+    margin: 1px 40px 10px 10px;
+    
 }
 .header4 {
     font-weight: normal;
     font-size: 30px;
+    margin: 10px 0 10px 0;
 }
 
+.stories {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.stories:hover {
+    color: blue;
+}
+
+#features {
+    margin: 1px 40px 10px 10px;
+    
+}
