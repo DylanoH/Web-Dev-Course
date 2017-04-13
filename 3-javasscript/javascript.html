@@ -3,39 +3,58 @@
 
     <head> 
         <title>Javascript</title>   
+
+        <style>
+            .Circle {
+                margin-right: 30px;
+                width: 150px;
+                height: 150px;
+                border-radius: 50% ;
+                float: left;
+            }
+
+            #blue-circle {
+                background-color: blue;
+            }
+
+            #pink-circle {
+                background-color: pink;
+            }
+
+            #red-circle {
+                background-color: red;
+            }
+            #yellow-circle {
+                background-color: yellow;
+            }
+
+
+        </style>
     </head>
 
     <body>
-
-        <p id="Text">Hello World!</p>
-        <button id="myButton">Change Text</button>
-
-        <p id="secondParagraph">Javascript is...</p>
-        <button id="mySecondButton">Add text</button>
-
-        <p id="emptyParagraph"></p>
-        <button id="myThirdButton">Create text</button>
-
-        <p id="moreText">This is some text</p>
-        <button id="styleText">Style Text</button>
+        <div class="Circle" id="red-circle"></div>
+        <div class="Circle" id="pink-circle"></div>
+        <div class="Circle" id="yellow-circle"></div>
+        <div class="Circle" id="blue-circle"></div>
 
        <script type="text/javascript">
-           document.getElementById("myButton").onclick = function() {
-               document.getElementById("Text").innerHTML = "Hello Dylano!!";
+           document.getElementById("red-circle").onclick = function () {
+               document.getElementById("red-circle").style.display = "none";
            }
 
-           document.getElementById("mySecondButton").onclick = function () {
-               document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + " Awesome";
+           document.getElementById("pink-circle").onclick = function () {
+               document.getElementById("pink-circle").style.display = "none";
            }
 
-           document.getElementById("myThirdButton").onclick = function () {
-               document.getElementById("emptyParagraph").innerHTML = document.getElementById("emptyParagraph").innerHTML = "<h1>Hi there!<h1>";
+           document.getElementById("yellow-circle").onclick = function () {
+               document.getElementById("yellow-circle").style.display = "none";
            }
 
-           document.getElementById("styleText").onclick = function () {
-               document.getElementById("moreText").style.display = "none";
+           document.getElementById("blue-circle").onclick = function () {
+               document.getElementById("blue-circle").style.display = "none";
            }
-           
+
 
        </script>
 
