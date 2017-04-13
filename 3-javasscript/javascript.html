@@ -10,9 +10,23 @@
         <p id="Text">Hello World!</p>
         <button id="myButton">Change Text</button>
 
+        <p id="secondParagraph">Javascript is...</p>
+        <button id="mySecondButton">Add text</button>
+
+        <p id="emptyParagraph"></p>
+        <button id="myThirdButton">Create text</button>
+
        <script type="text/javascript">
-           document.getElementById("myButton").onclick = function () {
+           document.getElementById("myButton").onclick = function() {
                document.getElementById("Text").innerHTML = "Hello Dylano!!";
+           }
+
+           document.getElementById("mySecondButton").onclick = function () {
+               document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + " Awesome";
+           }
+
+           document.getElementById("myThirdButton").onclick = function () {
+               document.getElementById("emptyParagraph").innerHTML = document.getElementById("emptyParagraph").innerHTML = "<h1>Hi there!<h1>";
            }
            
 
