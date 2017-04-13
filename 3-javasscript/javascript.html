@@ -16,6 +16,9 @@
         <p id="emptyParagraph"></p>
         <button id="myThirdButton">Create text</button>
 
+        <p id="moreText">This is some text</p>
+        <button id="styleText">Style Text</button>
+
        <script type="text/javascript">
            document.getElementById("myButton").onclick = function() {
                document.getElementById("Text").innerHTML = "Hello Dylano!!";
@@ -27,6 +30,10 @@
 
            document.getElementById("myThirdButton").onclick = function () {
                document.getElementById("emptyParagraph").innerHTML = document.getElementById("emptyParagraph").innerHTML = "<h1>Hi there!<h1>";
+           }
+
+           document.getElementById("styleText").onclick = function () {
+               document.getElementById("moreText").style.display = "none";
            }
            
 
