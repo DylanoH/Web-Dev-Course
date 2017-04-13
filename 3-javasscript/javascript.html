@@ -8,10 +8,13 @@
     <body>
 
         <p id="Text">Hello World!</p>
-      
+        <button id="myButton">Change Text</button>
 
        <script type="text/javascript">
-           document.getElementById("Text").innerHTML = "Hello Dylano!";
+           document.getElementById("myButton").onclick = function () {
+               document.getElementById("Text").innerHTML = "Hello Dylano!!";
+           }
+           
 
        </script>
 
