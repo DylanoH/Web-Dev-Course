@@ -7,23 +7,25 @@
     </head>
     <body>
 
-        <p>What is the magic word?</p>
-        <input type="text" id="enterWord" />
-        <button id="submitWord">Submit</button>
+        <p>How many fingers am I holding up?</p>
+        <input type="text" id="enteredNumber" />
+        <button id="Guess">Guess</button>
 
         <script type="text/javascript">
 
 
-            document.getElementById("submitWord").onclick = function () {
-                var magicWord = "banana";
+            document.getElementById("Guess").onclick = function () {
 
-                var enteredWord = document.getElementById("enterWord").value;
+                var randomNumber = Math.floor((Math.random() * 5));                            
+                var enteredNumber = document.getElementById("enteredNumber").value;
 
-                if (enteredWord == magicWord) {
-                    alert("Good job!");
+                if (enteredNumber == randomNumber)
+                {
+                    alert("GJ!");
                 }
-                else {
-                    alert("Go away!");
+                else 
+                {
+                    alert("Failfish! It was " + randomNumber);
                 }
             }
 
