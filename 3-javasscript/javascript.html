@@ -7,27 +7,19 @@
     </head>
     <body>
 
-        <p>How many fingers am I holding up?</p>
-        <input type="text" id="enteredNumber" />
-        <button id="Guess">Guess</button>
-
+        <div id="tweetDiv"></div>
         <script type="text/javascript">
 
+            var tweetString = "";
+            var tweets = ["Hellooo", "Cereal is amazing", "nighty night!"]
 
-            document.getElementById("Guess").onclick = function () {
-
-                var randomNumber = Math.floor((Math.random() * 5));                            
-                var enteredNumber = document.getElementById("enteredNumber").value;
-
-                if (enteredNumber == randomNumber)
-                {
-                    alert("GJ!");
-                }
-                else 
-                {
-                    alert("Failfish! It was " + randomNumber);
-                }
+            for(var i = 0; i < tweets.length; i++)
+            {
+                tweetString += "<p>" + tweets[i] + "</p>";
             }
+
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+
 
 
        </script>
