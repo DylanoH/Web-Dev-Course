@@ -4,60 +4,22 @@
     <head> 
         <title>Javascript</title>   
 
-        <style>
-            .Circle {
-                margin-right: 30px;
-                width: 150px;
-                height: 150px;
-                border-radius: 50% ;
-                float: left;
-            }
-
-            #blue-circle {
-                background-color: blue;
-            }
-
-            #pink-circle {
-                background-color: pink;
-            }
-
-            #red-circle {
-                background-color: red;
-            }
-            #yellow-circle {
-                background-color: yellow;
-            }
-
-
-        </style>
     </head>
-
     <body>
-        <div class="Circle" id="red-circle"></div>
-        <div class="Circle" id="pink-circle"></div>
-        <div class="Circle" id="yellow-circle"></div>
-        <div class="Circle" id="blue-circle"></div>
 
-       <script type="text/javascript">
-           document.getElementById("red-circle").onclick = function () {
-               document.getElementById("red-circle").style.display = "none";
-           }
+        <input type="text" id="textInput" />
+        <button id="Button">Change Text</button>
+        <p id="changedText">This is some text</p>
 
-           document.getElementById("pink-circle").onclick = function () {
-               document.getElementById("pink-circle").style.display = "none";
-           }
+        <script type="text/javascript">
+            document.getElementById("Button").onclick = function () {
 
-           document.getElementById("yellow-circle").onclick = function () {
-               document.getElementById("yellow-circle").style.display = "none";
-           }
+                var textEntered = "";
+                textEntered = document.getElementById("textInput").value;
 
-           document.getElementById("blue-circle").onclick = function () {
-               document.getElementById("blue-circle").style.display = "none";
-           }
-
+                document.getElementById("changedText").innerHTML = textEntered;
+            }
 
        </script>
-
     </body>
-
 </html>
