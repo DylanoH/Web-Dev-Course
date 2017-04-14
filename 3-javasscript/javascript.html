@@ -6,19 +6,19 @@
 
     </head>
     <body>
-
-        <input type="text" id="textInput" />
-        <button id="Button">Change Text</button>
-        <p id="changedText">This is some text</p>
-
         <script type="text/javascript">
-            document.getElementById("Button").onclick = function () {
 
-                var textEntered = "";
-                textEntered = document.getElementById("textInput").value;
+            var myArray = new Array();
+            myArray[0] = "Pizza";
+            myArray[1] = "Chocolate";
 
-                document.getElementById("changedText").innerHTML = textEntered;
-            }
+            var tweets = ["Morning", "I love coffee"];
+            alert(tweets[1]);
+
+            tweets.push("Back to work");
+            tweets.splice(1, 1, "Cereal for breakfast !");
+
+            console.log(tweets);
 
        </script>
     </body>
