@@ -6,19 +6,27 @@
 
     </head>
     <body>
+
+        <p>What is the magic word?</p>
+        <input type="text" id="enterWord" />
+        <button id="submitWord">Submit</button>
+
         <script type="text/javascript">
 
-            var myArray = new Array();
-            myArray[0] = "Pizza";
-            myArray[1] = "Chocolate";
 
-            var tweets = ["Morning", "I love coffee"];
-            alert(tweets[1]);
+            document.getElementById("submitWord").onclick = function () {
+                var magicWord = "banana";
 
-            tweets.push("Back to work");
-            tweets.splice(1, 1, "Cereal for breakfast !");
+                var enteredWord = document.getElementById("enterWord").value;
 
-            console.log(tweets);
+                if (enteredWord == magicWord) {
+                    alert("Good job!");
+                }
+                else {
+                    alert("Go away!");
+                }
+            }
+
 
        </script>
     </body>
