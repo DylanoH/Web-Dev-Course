@@ -4,12 +4,39 @@
     <head> 
         <title>JQuery</title>   
         <script type="text/javascript" src="jquery.min.js"></script>
+
+        <style>
+            #greenCircle {
+                width: 200px;
+                height: 200px;
+                background-color:green;
+                border-radius: 50%;
+                margin: 10px;
+            }
+
+            .redSquare {
+                width: 200px;
+                height: 200px;
+                background-color:red;
+                margin: 10px;
+            }
+
+
+        </style>
     </head>
     <body>
 
-      
+      <div id="greenCircle"></div>
+      <div class="redSquare"></div>
+      <div class="redSquare"></div>
 
         <script type="text/javascript">
+
+            $(".redSquare").click(function () {
+                alert("Clicked");
+            });
+
+
 
 
         </script>
