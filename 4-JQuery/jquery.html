@@ -14,26 +14,19 @@
                 margin: 10px;
             }
 
-            .redSquare {
-                width: 200px;
-                height: 200px;
-                background-color:red;
-                margin: 10px;
-            }
 
 
         </style>
     </head>
     <body>
 
-      <div id="greenCircle"></div>
-      <div class="redSquare"></div>
-      <div class="redSquare"></div>
+        <div id="greenCircle"></div>
+        <p>This is some text</p>  
 
         <script type="text/javascript">
 
-            $(".redSquare").click(function () {
-                alert("Clicked");
+            $("#greenCircle").click(function () {
+                $("p").html("this text has changed")
             });
 
 
