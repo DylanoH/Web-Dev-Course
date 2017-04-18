@@ -13,6 +13,13 @@
                 border-radius: 50%;
                 margin: 10px;
             }
+            .square {
+                width: 200px;
+                height: 200px;
+                background-color:red;
+                
+                margin: 10px;
+            }
 
 
 
@@ -21,19 +28,25 @@
     <body>
 
         <div id="greenCircle"></div>
-        <iframe src="http://www.cnn.com"></iframe>
+        <div class="square"></div>
+        <div class="square"></div>
 
         <script type="text/javascript">
 
+            $("#greenCircle, .square").on("click", function () {
 
+                if ($(this).attr("id") == "greenCircle") {
 
-            $("#greenCircle").on("mouseover", function () {
-                $("iframe").attr("src", "https://www.ecowebhosting.co.uk");
+                    alert("you clicked on a circle");
+
+                    
+                }
+                else if ($(this).attr("class") == "square") {
+                    alert("you clicked a square!");
+                }
+
+                //$(this).css("display", "none");
             });
-
-
-
-
 
 
         </script>
