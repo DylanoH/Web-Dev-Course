@@ -21,32 +21,28 @@
                 margin: 10px;
             }
 
+            #text{
+                display: none;
+            }
 
 
         </style>
     </head>
     <body>
 
-        <div id="greenCircle"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <p id="text">Fade this out</p>
+        <button id="toggle">toggle Text</button>
+
 
         <script type="text/javascript">
 
-            $("#greenCircle, .square").on("click", function () {
-
-                if ($(this).attr("id") == "greenCircle") {
-
-                    alert("you clicked on a circle");
-
+            $("#toggle").on("click", function () {
+                $("#text").fadeToggle("slow", function () {
                     
-                }
-                else if ($(this).attr("class") == "square") {
-                    alert("you clicked a square!");
-                }
-
-                //$(this).css("display", "none");
+                });
             });
+
+
 
 
         </script>
