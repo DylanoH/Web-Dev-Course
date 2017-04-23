@@ -6,23 +6,12 @@
         <script type="text/javascript" src="jquery.min.js"></script>
 
         <style>
-            #greenCircle {
+            #Circle {
                 width: 200px;
                 height: 200px;
                 background-color:green;
                 border-radius: 50%;
                 margin: 10px;
-            }
-            .square {
-                width: 200px;
-                height: 200px;
-                background-color:red;
-                
-                margin: 10px;
-            }
-
-            #text{
-                display: none;
             }
 
 
@@ -30,15 +19,19 @@
     </head>
     <body>
 
-        <p id="text">Fade this out</p>
-        <button id="toggle">toggle Text</button>
+        <div id="Circle"></div>
 
 
         <script type="text/javascript">
 
-            $("#toggle").on("click", function () {
-                $("#text").fadeToggle("slow", function () {
-                    
+            $("#Circle").on("click", function () {
+                $(this).animate({
+                    width: "500px",
+                    height: "500px",
+                    marginLeft: "100px",
+                    marginTop:"100px",
+                }, 2000, function () {
+                    $(this).css("backgroundColor", "red");
                 });
             });
 
