@@ -10,18 +10,19 @@
 </head>
 <body>
 
-    <p id="dataInsert"><p>
+
 
 
         <script type="text/javascript">
 
-        	$.ajax("info.txt")
-              .done(function(data) {
-            	$("#dataInsert").html(data);
-            })
-              .fail(function() {
-            	alert("data not found!");
-            });
+            //var regex = /Great/i;  i = lowercase insensitive
+            var regex = /e/g;   //g = global flag, returns every instance every time it is matched 
+            var string = "Regex is great!";
+            var result = string.match(regex);
+
+            alert(result);
+
+
 
         </script>
 </body>
