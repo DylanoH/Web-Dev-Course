@@ -11,23 +11,65 @@
             width: 150px; 
             height: 150px; 
             padding: 0.5em; 
+          
+        }
+
+        #container {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+        }
+
+        #resizable {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        #also {
+            width: 100px;
+            height: 100px;
+            background-color: red;
         }
 
     </style>
 </head>
 <body>
 
-    <div id="draggable">
-        <p>Drag me around</p>
+    <div id="container">
+        <div id="draggable">
+            <p>Drag me horizontally!</p>
+        </div>
     </div>
+
+    <div id="resizable"></div>
+    <div id="also"></div>
 
 
 
     <script type="text/javascript">
 
-        $(function () {
-            $("#draggable").draggable();
+        //make it dragable
+        $("#draggable").draggable({ axis: "x", containment: "parent" });
+
+        // make it resizable
+        $("#resizable").resizable({
+            grid: 50,
+            alsoResize: "#also",
+            resize: function (event, ui) {
+                if ($("#resizable").width() > 300) {
+                    alert("big enough");
+                }
+            }
         });
+
+        $("#also").resizable();
+
+
+
+      
+
+
 
 
     </script>
