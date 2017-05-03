@@ -1,0 +1,64 @@
+html, body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#grey-bar {
+    height: 40px;
+    width: auto;
+    background-color: lightgray;
+
+}
+
+#bar-content {
+   position: relative;
+   top: -10px;
+   padding-left: 7px;
+}
+
+h1 {
+    font-size: 140%;
+    float: left;
+}
+
+#buttonContainer {
+    width: 250px;
+    margin: 0 auto;
+
+}
+
+.toggleButton {
+    float: left;
+    padding: 2px 5px 2px 5px;
+    margin-top: 18px;
+    border-top: solid 1px black ;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+
+}
+
+.togglebutton:hover {
+  background-color: grey;
+}
+
+.togglebutton:active {
+  background-color: lightblue;
+}
+
+#htmlButton {
+    border-radius: 5px 0 0 5px;
+}
+
+#cssButton {
+
+}
+
+#javascriptButton {
+
+}
+
+#outputButton {
+    border-right: solid 1px black;
+    border-radius: 0 5px 5px 0px;
+}
