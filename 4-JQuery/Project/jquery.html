@@ -1,80 +1,37 @@
 
 <html>
-<head>
-    <title>Code Player</title>
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="projectCSS.css">
+  <head>
+      <title>Code Player</title>
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="projectCSS.css">
+  </head>
 
+  <body>
+    <div id="header">
 
-</head>
-<body>
+      <div id="logo">
+        CodePlayer
+      </div>
 
-<div id="header">
+      <div id="buttonContainer">
+        <div class="toggleButton active" id="html">HTML</div>
+        <div class="toggleButton" id="css">CSS</div>
+        <div class="toggleButton" id="javascript">JavaScript</div>
+        <div class="toggleButton active" id="output">output</div>
+      </div>
 
-  <div id="logo">
-    CodePlayer
-  </div>
+    </div>
 
-  <div id="buttonContainer">
-    <div class="toggleButton active" id="html">HTML</div>
-    <div class="toggleButton" id="css">CSS</div>
-    <div class="toggleButton" id="javascript">JavaScript</div>
-    <div class="toggleButton active" id="output">output</div>
-  </div>
-</div>
+    <textarea id="htmlPanel" class="panel"><h1>Hello world</h1><p id="paragraph"></p></textarea>
+    <textarea id="cssPanel" class="panel hidden">p {
+  color: green;
+}</textarea>
 
-<textarea id="htmlPanel" class="panel"><p id="paragraph">hello world</p></textarea>
-<textarea id="cssPanel" class="panel hidden">p {	color: green;	}</textarea>
-<textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Dylano";</textarea>
+    <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = ":D";</textarea>
+    <iframe id="outputPanel" class="panel"></iframe>
 
-<iframe id="outputPanel" class="panel"></iframe>
+    <script src="projectJS.js" type="text/javascript"></script>
 
-
-
-
-    <script type="text/javascript">
-
-		function updateOutput() {
-			$("iframe").contents().find("html").html("<html><head><style type='text/css'>" +
-			$("cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>"
-			);
-
-			document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
-
-
-		}
-
-      $(".toggleButton").hover(function() {
-        $(this).addClass("hightlightedButton");
-      }, function() {
-        $(this).removeClass("hightlightedButton");
-      });
-
-      $(".toggleButton").on("click", function() {
-        $(this).toggleClass("active");
-        $(this).removeClass("hightlightedButton");
-
-				var panelId = $(this).attr("id") + "Panel";
-
-				$("#" + panelId).toggleClass("hidden");
-
-				var numberOfActivePanels = 4 - $(".hidden").length;
-
-				$(".panel").width(($(window).width() / numberOfActivePanels) - 5);
-
-
-      });
-
-      $(".panel").height($(window).height() - $("#header").height() -15);
-      $(".panel").width(($(window).width() / 2) - 5);
-
-			updateOutput();
-
-      $("textarea").on("change keyup paste", function(){
-				updateOutput();
-      });
-
-
-    </script>
-</body>
+  </body>
+  
 </html>
