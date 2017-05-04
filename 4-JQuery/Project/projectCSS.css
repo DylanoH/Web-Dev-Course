@@ -31,12 +31,12 @@ html, body {
   font-size: 90%;
 }
 
-#htmlButton {
+#html{
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-#outputButton {
+#output {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-right: 1px solid grey;
@@ -48,4 +48,23 @@ html, body {
 
 .hightlightedButton {
   background-color: grey;
+}
+
+textarea {
+  resize: none;
+  border-top: none;
+  border-color: grey;
+}
+.panel {
+  float: left;
+  width: 50%;
+	border-left: none;
+}
+
+iframe {
+  border: none;
+}
+
+.hidden {
+	display: none;
 }
