@@ -31,23 +31,31 @@ html, body {
 #logo {
   width: 12%;
   position: relative;
+  top: 25px;
 }
 
+#me {
 
+}
 
 #thomas-photo {
   width: 33%;
   float: left;
 }
 
-#me {
-  margin: 0;
-}
+
 #me-container {
-  
+  margin-left: 50px;
+  padding: 50px;
+  width: 680px;
 }
 
 #me-text {
-  margin: 50px;
   font-weight: bold;
+}
+
+.text-props {
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  color:rgb(47, 46, 46);
 }
