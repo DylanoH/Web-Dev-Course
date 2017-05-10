@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    <title>Code Player</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="projectCSS.css">
+
+
+</head>
+<body>
+    <div id="header">
+
+        <div id="logo">
+            CodePlayer
+        </div>
+
+        <div id="buttonContainer">
+            <div id="html" class="toggleButton active" >HTML</div>
+            <div id="css" class="toggleButton">CSS</div>
+            <div id="javascript" class="toggleButton">Javascript</div>
+            <div id="output" class="toggleButton active">Output</div>
+        </div>
+
+    </div>
+
+    <div id="bodyContainer">
+        <textarea id="htmlPanel" class="panel">Hello World</textarea>
+        <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+
+    <script type="text/javascript">
+
+        $(".toggleButton").hover(function() {
+            $(this).addClass("hightlightedButton");
+        }, function() {
+            $(this).removeClass("hightlightedButton");
+        });
+
+        $(".toggleButton").on("click", function() {
+            $(this).toggleClass("active");
+            $(this).removeClass("hightlightedButton");
+        });
+
+        $(".panel").height($(window).height() - $("#header").height() - 15);
+        $(".panel").width(($(window).width() /2) - 5);
+
+        $("iframe").contents().find("html").html($("#htmlPanel").val());
+
+
+
+
+    </script>
+
+</body>
+</html>

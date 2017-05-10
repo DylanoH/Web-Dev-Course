@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#header {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    background-color: #EEEEEE;
+}
+
+#logo {
+    float: left;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 3px 5px;
+}
+
+
+#buttonContainer {
+    width: 233px;
+    margin: 0 auto;
+}
+
+.toggleButton {
+    float: left;
+    padding: 6px;
+    border: solid 1px grey;
+    border-right: none;
+    font-size: 90%;
+}
+
+#html {
+    border-radius: 4px 0 0 4px;
+}
+
+#css {
+
+}
+
+#javascript {
+
+}
+
+#output {
+    border-right: solid 1px black;
+    border-radius: 0 4px 4px 0px;
+}
+
+.active {
+    background-color: #E8F2FF;
+}
+
+.hightlightedButton {
+    background-color: grey;
+}
+
+textarea {
+    resize: none;
+    border-top: none;
+    border-color: grey;
+}
+
+.panel {
+    float: left;
+    width: 50%;
+}
+
+iframe {
+  border: none;
+}
