@@ -35,7 +35,13 @@ html, body {
 }
 
 #me {
+  float: left;
+}
 
+#me > h1, #me > p {
+position: relative;
+top: 50px;
+left: 70px;
 }
 
 #thomas-photo {
@@ -44,13 +50,7 @@ html, body {
 }
 
 
-#me-container {
-  margin-left: 50px;
-  padding: 50px;
-  width: 680px;
-}
-
-#me-text {
+.h1-props {
   font-weight: bold;
 }
 
@@ -58,4 +58,20 @@ html, body {
   font-family: raleway, sans-serif;
   font-size: 20px;
   color:rgb(47, 46, 46);
+
+}
+
+.body-greyBar {
+  height: 90px;
+  background-color: #999999;
+}
+
+.clear{
+  clear: both;
+}
+
+.tribe-photo {
+  float: right;
+  width: 40%;
+  margin: 20px 0px 20px 0px;
 }
