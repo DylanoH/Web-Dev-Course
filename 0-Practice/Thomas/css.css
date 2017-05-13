@@ -31,23 +31,47 @@ html, body {
 #logo {
   width: 12%;
   position: relative;
+  top: 25px;
 }
 
+#me {
+  float: left;
+}
 
+#me > h1, #me > p {
+position: relative;
+top: 50px;
+left: 70px;
+}
 
 #thomas-photo {
   width: 33%;
   float: left;
 }
 
-#me {
-  margin: 0;
-}
-#me-container {
-  
+
+.h1-props {
+  font-weight: bold;
 }
 
-#me-text {
-  margin: 50px;
-  font-weight: bold;
+.text-props {
+  font-family: raleway, sans-serif;
+  font-size: 20px;
+  color:rgb(47, 46, 46);
+
+}
+
+.body-greyBar {
+  height: 90px;
+  background-color: #999999;
+}
+
+.clear{
+  clear: both;
+}
+
+.tribe-photo {
+  float: right;
+  width: 40%;
+  margin: 20px 0px 20px 0px;
 }
