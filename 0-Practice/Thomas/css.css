@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 #nav-container {
@@ -42,11 +42,11 @@ html, body {
 position: relative;
 top: 50px;
 left: 70px;
-width: 900px;
+width: 1100px;
 }
 
 #thomas-photo {
-  width: 36%;
+  width: 40%;
   float: left;
 }
 
