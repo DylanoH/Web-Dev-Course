@@ -42,10 +42,11 @@ html, body {
 position: relative;
 top: 50px;
 left: 70px;
+width: 900px;
 }
 
 #thomas-photo {
-  width: 33%;
+  width: 36%;
   float: left;
 }
 
