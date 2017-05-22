@@ -46,3 +46,9 @@ h3 {
   top: 300px;
  display: none;
 }
+
+.project-image {
+  box-shadow: 0px 0px 5px 1px black;
+  margin: 10px 5px 10px 5px;
+
+}
