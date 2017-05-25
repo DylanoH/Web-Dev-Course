@@ -16,7 +16,7 @@ html, body {
   font-size: 20px;
 }
 
-#home {
+#Home {
 
   height: 100%;
   width: 100%;
@@ -53,7 +53,8 @@ h3 {
 }
 .project-image {
   box-shadow: 0px 0px 5px 1px black;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 5px 10px 5px;
+
 }
 .bg-inverse {
   background-color: #c6c6c6 !important;
@@ -65,4 +66,15 @@ h3 {
 
 .center {
   text-align: center;
+}
+
+.img-size {
+  width: 320px;
+  height: 215px;
+}
+
+.img-size:hover {
+  transform: scale(1.4);
+  box-shadow: 0px 0px 10px 1px black;
+  transition: all 0.3s;
 }

@@ -16,6 +16,7 @@
 
     <!-- files -->
     <link rel="stylesheet" type="text/css" href="mainCSS.css">
+    <link href="scrolling-nav.css" rel="stylesheet">
 
   </head>
   <body>
@@ -30,16 +31,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#Home">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" href="#Home" >Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Projects">Projects</a>
+                <a class="nav-link page-scroll" href="#Projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#About">About Me</a>
+                <a class="nav-link page-scroll" href="#About">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Contact">Contact</a>
+                <a class="nav-link page-scroll" href="#Contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -48,9 +49,7 @@
     </nav>
 
 
-
-
-    <div id="home" >
+    <div id="Home" >
       <div class="container-fluid">
           <div class="row ">
             <div class="fadeIn col-sm-12">
@@ -61,23 +60,29 @@
         </div>
       </div>
 
+    <br />
     <div class="container-fluid">
 
 
-      <div id="projects">
+      <div id="Projects">
         <div class="row ">
-          <div class="col-sm-6">
-            <h2>Web Dev</h2>
-            <div class="center">
-              <img src="https://unsplash.it/320/300 "  class="project-image"/>
-              <img src="https://unsplash.it/320/300" class="project-image" />
-            </div>
-          </div>
           <div class="col-sm-6">
             <h2>Game Dev</h2>
             <div class="center">
-              <img src="https://unsplash.it/320/300 "  class="project-image"/>
-              <img src="https://unsplash.it/320/300" class="project-image" />
+              <img src="Resources/urbanroad.png"  class="project-image img-size"/>
+              <img src="https://static.wixstatic.com/media/a96fca_a2a122b00d194c538845ca822a81fa25~mv2.jpg/v1/fill/w_250,h_168,al_c,q_80,usm_0.66_1.00_0.01/a96fca_a2a122b00d194c538845ca822a81fa25~mv2.webp" class="project-image img-size" />
+              <img src="Resources/terraingen.png"  class="project-image img-size"/>
+
+
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h2>Web Dev</h2>
+            <div class="center">
+              <img src="Resources/responsive.png "  class="project-image img-size"/>
+              <img src="Resources/codeplayer.png "  class="project-image img-size"/>
+              <img src="Resources/comingsoon.jpg" class="project-image img-size" />
+
             </div>
 
           </div>
@@ -86,6 +91,8 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="scrolling-nav.js"></script>
     <script type="text/javascript" src="mainJS.js"></script>
   </body>
 </html>
