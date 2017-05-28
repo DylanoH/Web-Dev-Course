@@ -16,8 +16,11 @@ html, body {
   font-size: 20px;
 }
 
-#Home {
+.navbar {
+  padding: 0px !important;
+}
 
+#Home {
   height: 100%;
   width: 100%;
   background-image: url("Resources/sydney-night.jpg");
@@ -32,30 +35,25 @@ h1 {
 }
 
 h2 {
+
   text-align: center;
 }
 
 h3 {
   color: #5F5F5F;
+  font-weight: bolder;
 }
 
 .header-text {
   text-align: center;
   position: relative;
   top: 300px;
- display: none;
-}
-
-@media screen and (max-width: 375px) {
-  .header-text {
-    top: 150px;
-  }
-}
-.project-image {
-  box-shadow: 0px 0px 5px 1px black;
-  margin: 10px 5px 10px 5px;
 
 }
+.displayNone {
+  display: none;
+}
+
 .bg-inverse {
   background-color: #c6c6c6 !important;
 }
@@ -64,8 +62,35 @@ h3 {
     background-color: #c6c6c6 !important;
 }
 
+.section-header {
+  font-size: 250%;
+}
+
+
+
 .center {
   text-align: center;
+
+}
+
+.caption {
+  display: block;
+}
+
+.project-box {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 320px;
+  margin: 0px 10px 20px 10px;
+  box-shadow: 0px 0px 3px 1px grey;
+  background-color: white;
+}
+
+.project-box:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 6px 1px black;
+  transition: all 0.2s;
 }
 
 .img-size {
@@ -73,8 +98,96 @@ h3 {
   height: 215px;
 }
 
-.img-size:hover {
-  transform: scale(1.4);
-  box-shadow: 0px 0px 10px 1px black;
-  transition: all 0.3s;
+
+
+
+
+#About {
+  height: auto;
+  width: 100%;
+  background-color: #262626;
+  color: white;
+}
+
+
+.me-image {
+  position: relative;
+  top: 0px;
+}
+.img-circle {
+  border-radius: 50% ;
+}
+
+.logo-size {
+  width: 150px;
+  height: 150px;
+  margin: 0px 10px 20px 10px;
+}
+
+#unity {
+  width: 200px;
+  height: 150px;
+  margin: 0px 10px 20px 10px;
+}
+
+#Contact {
+  width: 100%;
+  background-color: #262626;
+  color: white;
+  padding-bottom:80px;
+}
+
+p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+a{
+	color:#26a5d3;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+#social-buttons>li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#social-buttons>li:last-child {
+  margin-right: 0px;
+}
+
+
+
+
+@media screen and (max-width: 415px) {
+  .header-text {
+    top: 150px;
+  }
+  .project-box:hover {
+    transform: scale(1);
+    box-shadow: 0px 0px 3px 1px grey;
+    transition: all 0.0s;
+  }
+
+  .project-box {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    margin: 0px 10px 20px 10px;
+    box-shadow: 0px 0px 3px 1px grey;
+    background-color: white;
+  }
+
+  .img-size {
+    width: 300px;
+    height: 195px;
+  }
 }
