@@ -11,6 +11,10 @@ html, body {
   background-color: #FFFFFF;
 }
 
+body {
+  position: relative;
+}
+
 #nav-container {
 
   font-size: 20px;
