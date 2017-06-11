@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style>
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+
+      body {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        color: white;
+      }
+
+      #Home {
+
+        background-image: url(Resources/jumbo-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 700px;
+        margin-top:70px;
+      }
+
+      #About {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      #Download {
+        margin-top: 100px;
+        background-color: #89A663;
+        background-size: cover;
+        text-align: center;
+      }
+
+      .black-text {
+        color: black;
+      }
+
+      .card-img-top {
+        width: 100%;
+      }
+
+      #Download div {
+        margin-top: 50px;
+      }
+
+      #donwloadpic {
+        width: 200px;
+      }
+
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example" data-offset="100">
+
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" id="navbar-example">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#Home"><img src="Resources/logoo.png" width="120" height="50"/></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link active" href="#Home">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Download">Download The App</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="E-mail">
+      <input class="form-control mr-sm-2" type="password" placeholder="Password">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="jumbotron jumbotron-fluid" id="Home">
+  <div class="container">
+    <h1 class="display-3">Urban Road</h1>
+    <p class="lead">The best mobile puzzle game in existence.</p>
+    <hr class="my-4">
+    <p>A 2.5D mobile puzzle game in which you have to build your city, but the 2 ends of the city need to be connected by a road. </p>
+    <p>Want to stay up-to date with latest updates? Subscribe to our newsletter!</p>
+
+    <form class="form-inline">
+      <div class="form-group">
+        <label class="sr-only" for="email">Email address</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" href="#">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+
+<section id="About">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 black-text">
+        <h1>But why is it so great?</h1>
+        <p class="lead">A bunch of never seen before features!</p>
+      </div>
+    </div>
+  </div>
+
+  <bR /><bR />
+
+  <div class="container">
+    <div class="card-deck black-text">
+      <div class="card">
+        <img class="card-img-top" src="Resources/app.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="Resources/app.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="Resources/app.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Download">
+  <div class="container">
+    <div class="row black-text">
+      <div class="col-sm-12">
+        <h1>Convinced now, eh?</h1>
+        <p class="lead">Download the app!</p>
+
+        <p><a href="#"><img id="donwloadpic" src="Resources/download.png" /></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+
+
+
+
+      $('body').scrollspy({ target: '#navbar-example' });
+
+    </script>
+  </body>
+</html>
