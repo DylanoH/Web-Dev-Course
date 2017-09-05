@@ -3,3 +3,7 @@ $(document).ready(function() {
 });
 
 $('body').scrollspy({ target: '#nav-container' });
+
+// $(".rqm").on("clicked", function() {
+//   console.log("hi");
+// })

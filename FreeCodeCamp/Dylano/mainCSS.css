@@ -79,6 +79,7 @@ h3 {
 
 .caption {
   display: block;
+  padding: 0 10px;
 }
 
 .project-box {
