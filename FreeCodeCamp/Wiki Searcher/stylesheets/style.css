@@ -1,10 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-/* line 5, ../sass/style.scss */
+/* line 6, ../sass/style.scss */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* line 11, ../sass/style.scss */
-body {
+/* line 12, ../sass/style.scss */
+html, body {
   background-color: #3696b0;
+  font-family: Raleway;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+/* line 20, ../sass/style.scss */
+html p, body p {
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* line 31, ../sass/style.scss */
+h1 {
+  font-weight: bolder;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: -2px 2px 3px #5b5b5b;
+  margin-top: 40px;
+  color: #5d009e;
+}
+
+/* line 44, ../sass/style.scss */
+#searchArea {
+  text-align: center;
+  margin-top: 20px;
 }

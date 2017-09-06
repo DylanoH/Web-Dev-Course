@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 $background-color: #3696b0;
+$niceShadow: -2px 2px 3px #5b5b5b;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,6 +9,41 @@ $background-color: #3696b0;
 
 
 
-body {
+html, body {
   background-color: $background-color;
+  font: {
+    family: Raleway;
+  }
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  p {
+    text: {
+      align: center;
+    }
+    font: {
+      size: 25px;
+      style: italic;
+    }
+  }
+}
+
+h1 {
+  font: {
+    weight: bolder;
+    size: 100px;
+  }
+  text: {
+    align: center;
+    shadow: $niceShadow;
+  }
+  margin-top: 40px;
+  color: #5d009e;
+}
+
+#searchArea {
+  text: {
+    align: center;
+  }
+  margin-top: 20px;
 }
