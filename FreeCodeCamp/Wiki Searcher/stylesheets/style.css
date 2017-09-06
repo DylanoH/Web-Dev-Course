@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/* line 5, ../sass/style.scss */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  background-color: #3696b0;
+}

@@ -73,6 +73,8 @@ if (navigator.geolocation) {
         }
       }
 
+      
+      console.log(data.weather[0].description);
 
     }); // json end
 

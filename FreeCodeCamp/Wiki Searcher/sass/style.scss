@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+$background-color: #3696b0;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: $background-color;
+}
