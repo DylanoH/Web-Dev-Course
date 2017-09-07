@@ -4,6 +4,7 @@
     <title>Wiki Searcher</title>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script type="text/javascript" src="jquery/jquery.min.js"></script>
@@ -13,30 +14,25 @@
 
   <body>
 
+    <div class="container-fluid">
 
+          <h1>Wikipedia Searcher</h1>
+          <p>Your #1 Wikipedia Searcher on the web!</p>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Wikipedia Searcher</h1>
-      </div>
+          <div id="searchArea">
+            <input type="text" name="searchBar" value="" class="searchBar" placeholder="Pigs rules!">
+            <button type="button" name="searchButton" class="searchButton">Search</button>
+
+            <br>
+            <button type="button" name="randomButton" class="randomButton">Take a leap of faith and Random!</button>
+          </div>
+
+          <ul class="outcome">
+
+          </ul>
+      <!-- <hr> -->
     </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Your #1 Wikipedia Searcher on the web!</p>
-      </div>
-    </div>
-
-    <!-- <hr> -->
-
-    <div class="row">
-      <div class="col-sm-12">
-        <div id="searchArea">
-          <input type="text" name="searchBar" value="" class="searchBar">
-          <button type="button" name="searchButton" class="searchButton">Search</button>
-        </div>
-      </div>
-    </div>
 
 
 

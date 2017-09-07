@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-/* line 6, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* line 12, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 html, body {
   background-color: #3696b0;
   font-family: Raleway;
@@ -12,25 +12,104 @@ html, body {
   height: 100%;
   width: 100%;
 }
-/* line 20, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 html p, body p {
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
   font-style: italic;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 h1 {
   font-weight: bolder;
-  font-size: 100px;
+  font-size: 180px;
   text-align: center;
   text-shadow: -2px 2px 3px #5b5b5b;
   margin-top: 40px;
+  margin: 40px 5px 0px 5px;
   color: #5d009e;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 #searchArea {
   text-align: center;
   margin-top: 20px;
+}
+
+/* line 57, ../sass/style.scss */
+.searchBar {
+  border-radius: 5px;
+  width: 40%;
+  font-size: 30px;
+}
+
+/* line 62, ../sass/style.scss */
+.searchButton {
+  border-radius: 5px;
+  width: auto;
+  font-size: 30px;
+}
+
+/* line 68, ../sass/style.scss */
+.randomButton {
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+/* line 73, ../sass/style.scss */
+.outcome {
+  list-style-type: none;
+  margin-top: 20px;
+}
+/* line 77, ../sass/style.scss */
+.outcome p {
+  text-align: left;
+  font-style: normal;
+  font-size: 30px;
+}
+/* line 84, ../sass/style.scss */
+.outcome a {
+  font-size: 42px;
+  font-weight: bolder;
+  color: #5d009e;
+}
+
+@media screen and (max-width: 415px) {
+  /* line 96, ../sass/style.scss */
+  html p, body p {
+    font-size: 20px;
+  }
+
+  /* line 100, ../sass/style.scss */
+  h1 {
+    font-size: 70px;
+  }
+
+  /* line 103, ../sass/style.scss */
+  .searchBar {
+    border-radius: 5px;
+    width: 40%;
+    font-size: 25px;
+  }
+
+  /* line 108, ../sass/style.scss */
+  .searchButton {
+    border-radius: 5px;
+    width: auto;
+    font-size: 25px;
+  }
+
+  /* line 114, ../sass/style.scss */
+  .randomButton {
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 123, ../sass/style.scss */
+  h1 {
+    font-size: 50px;
+  }
 }

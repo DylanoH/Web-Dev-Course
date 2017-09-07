@@ -2,6 +2,10 @@
 
 $background-color: #3696b0;
 $niceShadow: -2px 2px 3px #5b5b5b;
+$header-color: #5d009e;
+$border-radius: 5px;
+$button-size: 30px;
+$button-size-smallscreen: 25px;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -22,7 +26,7 @@ html, body {
       align: center;
     }
     font: {
-      size: 25px;
+      size: 40px;
       style: italic;
     }
   }
@@ -31,19 +35,93 @@ html, body {
 h1 {
   font: {
     weight: bolder;
-    size: 100px;
+    size: 180px;
   }
   text: {
     align: center;
     shadow: $niceShadow;
   }
   margin-top: 40px;
-  color: #5d009e;
+  margin: 40px 5px 0px 5px;
+  color: $header-color;
 }
 
 #searchArea {
   text: {
     align: center;
   }
+
   margin-top: 20px;
+}
+
+.searchBar {
+  border-radius: 5px;
+  width: 40%;
+  font-size: $button-size;
+}
+.searchButton {
+  border-radius: $border-radius;
+  width: auto;
+  font-size: $button-size;
+}
+
+.randomButton {
+  margin-top: 20px;
+  border-radius: $border-radius;
+  font-size: $button-size;
+}
+.outcome {
+  list-style-type: none;
+  margin-top: 20px;
+  
+  p {
+    text-align: left;
+    font: {
+      style: normal;
+      size: 30px;
+    }
+  }
+  a {
+    font: {
+      size: 42px;
+      weight: bolder;
+    }
+    color: $header-color;
+  }
+}
+
+@media screen and (max-width: 415px) {
+
+  html, body {
+    p {
+      font-size: 20px;
+    }
+  }
+  h1{
+    font-size: 70px;
+  }
+  .searchBar {
+    border-radius: 5px;
+    width: 40%;
+    font-size: $button-size-smallscreen;
+  }
+  .searchButton {
+    border-radius: $border-radius;
+    width: auto;
+    font-size: $button-size-smallscreen;
+  }
+
+  .randomButton {
+    margin-top: 20px;
+    border-radius: $border-radius;
+    font-size: $button-size-smallscreen;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  h1{
+    font-size: 50px;
+  }
+
 }
