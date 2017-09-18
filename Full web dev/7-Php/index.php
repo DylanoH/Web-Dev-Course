@@ -1,22 +1,19 @@
 <?php
 
-  $user = "Sammie";
+  $family = array("Dylano", "Sammie", "Oona");
 
-  if ($user == "Sammie") {
 
-    echo "Hello $user!";
-  }
-  else {
-    echo "Who you bruh?";
+
+  foreach ($family as $key => $value) {
+
+    $family[$key] = $value." Hartman";
+
+    echo "Array item ".$key." is ".$value."<br />";
   }
 
-  echo "<br />";
-  $age = 25;
+  for ($i=0; $i < sizeOf($family); $i++) {
+    echo $family[$i]."<br />";
+  }
 
-  if ($age >= 18 || $user == "Sammie") {
-    echo "Yo ass can enter";
-  }
-  else {
-    echo "Go yo ass back to kindergarten you punk";
-  }
+
 ?>
