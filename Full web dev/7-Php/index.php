@@ -1,19 +1,13 @@
 <?php
 
-  $family = array("Dylano", "Sammie", "Oona");
+$i = 0;
+$myDearFriends = array("Sammie", "Oona", "Zempy", "Lucy");
 
+while ($i < sizeOf($myDearFriends)) {
 
+  echo $myDearFriends[$i]."<br />";
 
-  foreach ($family as $key => $value) {
-
-    $family[$key] = $value." Hartman";
-
-    echo "Array item ".$key." is ".$value."<br />";
-  }
-
-  for ($i=0; $i < sizeOf($family); $i++) {
-    echo $family[$i]."<br />";
-  }
-
+  $i++;
+}
 
 ?>
