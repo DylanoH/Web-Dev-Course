@@ -1,22 +1,20 @@
 <?php
-  $name = "Dylano";
-  echo "<p>My name is $name.</p>";
+  $myArray = array("Dylano", "Sammie", "Oona");
+  $myArray[] = "Lucy";
+  print_r ($myArray);
 
-  $string1 = "<p>this is the first part";
-  $string2 = "of the sentence.</p>";
+  echo $myArray[1];
 
-  echo $string1." ".$string2;
+  $array2 = array(
 
-  $myNumber = 45;
+    "France" => "French",
+    "USA" => "Engliosh",
+    "Germany" => "German"
 
-  $calculation = $myNumber * 31 / 89 + 4;
+  );
 
-  echo "The result is: ".$calculation;
+  unset($array2["France"]);
+  print_r($array2) ;
 
-  $myBool = true;
-  echo "<p>Is this true?".$myBool."</p>";
-
-  $variableName = "name";
-
-  echo $$variableName;
+  echo sizeOf($array2);
 ?>
