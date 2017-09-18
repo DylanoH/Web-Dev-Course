@@ -1,20 +1,22 @@
 <?php
-  $myArray = array("Dylano", "Sammie", "Oona");
-  $myArray[] = "Lucy";
-  print_r ($myArray);
 
-  echo $myArray[1];
+  $user = "Sammie";
 
-  $array2 = array(
+  if ($user == "Sammie") {
 
-    "France" => "French",
-    "USA" => "Engliosh",
-    "Germany" => "German"
+    echo "Hello $user!";
+  }
+  else {
+    echo "Who you bruh?";
+  }
 
-  );
+  echo "<br />";
+  $age = 25;
 
-  unset($array2["France"]);
-  print_r($array2) ;
-
-  echo sizeOf($array2);
+  if ($age >= 18 || $user == "Sammie") {
+    echo "Yo ass can enter";
+  }
+  else {
+    echo "Go yo ass back to kindergarten you punk";
+  }
 ?>
