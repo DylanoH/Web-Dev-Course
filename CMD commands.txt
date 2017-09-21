@@ -1,4 +1,10 @@
 cd to project folder
 
+react
+
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 live-server public
+
+scss
+
+compass watch [path/to/project]
