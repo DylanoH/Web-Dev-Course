@@ -1,34 +1,27 @@
 <?php
 
-  if (is_numeric($_GET['number']) && $_GET['number'] > 0 && $_GET['number'] == round($_GET['number'], 0)) {
+    if ($_POST) {
+      $onList = false;
+      $usernames = array("Dylano", "Dyl", "Dyla", "Dyli");
+      foreach ($usernames as $value) {
+        if ($value == $_POST['name']) {
 
-    $isPrime = true;
-
-    for ($i=2; $i < $_GET['number']; $i++) {
-      if ($_GET['number'] % $i == 0) {
-        // number is not a prime
-        $isPrime = false;
+          $onList = true;
+        }
+      }
+      if ($onList) {
+        echo "<p>Hello ".$value."!</p>";
+      }
+      else {
+        echo "<p>Your name is not on the list!</p>";
       }
     }
 
-    if ($isPrime) {
-      echo "<p>".$i." is a prime number!</p>";
-    }
-    else {
-      echo "<p>".$i." is not a prime number!</p>";
-    }
-
-  }
-
-  else if($_GET){
-    echo "<p>Please enter a whole positive number</p>";
-  }
-
 ?>
 
-<p>enter a number</p>
-<form>
-  <input type="text" name="number" value="">
+<p>Whats your name?</p>
+<form method="post">
+  <input type="text" name="name" value="">
 
   <input type="submit" value="GO!">
 </form>
