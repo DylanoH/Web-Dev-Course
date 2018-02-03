@@ -1,32 +1,34 @@
 <?php
 
-  if($_GET){
+  if (is_numeric($_GET['number']) && $_GET['number'] > 0 && $_GET['number'] == round($_GET['number'], 0)) {
 
     $isPrime = true;
 
-    for($i = 2; $i < $_GET["number"]; $i++) {
-      if($_GET["number"] % $i == 0) {
+    for ($i=2; $i < $_GET['number']; $i++) {
+      if ($_GET['number'] % $i == 0) {
+        // number is not a prime
         $isPrime = false;
       }
     }
 
-    if ($isPrime == true) {
+    if ($isPrime) {
       echo "<p>".$i." is a prime number!</p>";
     }
     else {
-      echo "<p>".$i." is not prime!</p>";
+      echo "<p>".$i." is not a prime number!</p>";
     }
+
   }
 
-  // echo "Hi there ".$_GET["number"]."!";
-
-
+  else if($_GET){
+    echo "<p>Please enter a whole positive number</p>";
+  }
 
 ?>
 
-<p>Enter a whole number</p>
+<p>enter a number</p>
+<form>
+  <input type="text" name="number" value="">
 
-<form class="" >
-  <input type="number" name="number" >
-  <input type="submit" value="go!" >
+  <input type="submit" value="GO!">
 </form>
