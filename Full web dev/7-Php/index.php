@@ -1,27 +1,18 @@
 <?php
 
-    if ($_POST) {
-      $onList = false;
-      $usernames = array("Dylano", "Dyl", "Dyla", "Dyli");
-      foreach ($usernames as $value) {
-        if ($value == $_POST['name']) {
+  $emailTo = "dylano.hartman@gmail.com";
+  $subject = "Test";
+  $body = "Yo!";
 
-          $onList = true;
-        }
-      }
-      if ($onList) {
-        echo "<p>Hello ".$value."!</p>";
-      }
-      else {
-        echo "<p>Your name is not on the list!</p>";
-      }
-    }
+  $headers = "From: dylano.hartman@gmail.com";
+
+  if(mail($emailTo, $subject, $body, $headers)) {
+
+    echo "email sent";
+  }
+  else {
+    echo "email failed to sent";
+  }
+
 
 ?>
-
-<p>Whats your name?</p>
-<form method="post">
-  <input type="text" name="name" value="">
-
-  <input type="submit" value="GO!">
-</form>
