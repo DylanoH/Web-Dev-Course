@@ -1,0 +1,56 @@
+/* line 1, ../sass/style.scss */
+body {
+  font: 1em "Helvetica", sans-serif;
+  background-color: #edeff0;
+  margin: 0;
+}
+
+/* line 7, ../sass/style.scss */
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+}
+
+/* line 16, ../sass/style.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+}
+
+/* line 20, ../sass/style.scss */
+input, textarea {
+  font-size: inherit;
+}
+
+/* line 24, ../sass/style.scss */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+}
+
+/* line 31, ../sass/style.scss */
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 37, ../sass/style.scss */
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 20px;
+}
+
+/* line 43, ../sass/style.scss */
+table th {
+  text-align: left;
+}
+
+/* line 47, ../sass/style.scss */
+.faded {
+  color: #bbb;
+}
