@@ -11,16 +11,28 @@
   $dbpass = '1qaz2wsx';
 
 
+  // $con = new PDO('mysql:host=mysql.stackcp.com:49649; dbname=cmstutorial-33354415', $dbname, $dbpass);
+
 
   try {
-    $con = mysqli_connect($dbserver, $dbname, $dbpass, $dbname);
+    $con = new PDO('mysql:host=mysql.stackcp.com:49649; dbname=cmstutorial-33354415', $dbname, $dbpass);
     //echo "connection succesful";
   }
-  catch(Exception $e) {
+  catch(PDOException  $e) {
     $error_message = $e->getMessage();
     echo "an error has occured: $error_message";
   }
 
 
+  // try {
+  //   $con = mysqli_connect($dbserver, $dbname, $dbpass, $dbname);
+  //   echo "connection succesful";
+  // }
+  // catch(Exception $e) {
+  //   $error_message = $e->getMessage();
+  //   echo "an error has occured: $error_message";
+  // }
+
+ require 'functions.php';
 
  ?>

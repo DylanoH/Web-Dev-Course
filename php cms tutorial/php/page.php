@@ -10,16 +10,24 @@
     $page = $con->prepare("
       SELECT *
       FROM pages
-      WHERE slug = ?
+      WHERE slug = :slug
     ");
 
-    $page->bind_param("s", $slug);
+    $page->execute(['slug' => $slug]);
 
-    $page->execute();
+    $page = $page->fetch(PDO::FETCH_ASSOC);
 
-    $result = $page->get_result();
+    if ($page) {
+      $page['created'] = new DateTime($page['created']);
 
-    var_dump($result);
+      if ($page['updated']) {
+        $page['updated'] = new DateTime($page['updated']);
+      }
+    }
   }
+
+  require VIEW_ROOT . '/page/show.php';
+
+
 
 ?>

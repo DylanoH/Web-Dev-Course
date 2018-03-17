@@ -6,7 +6,7 @@
   $pages = $con->query("
     SELECT id, label, slug
     FROM pages
-  ")->fetch_all(MYSQLI_ASSOC);
+  ")->fetchAll(PDO::FETCH_ASSOC);
 
   require VIEW_ROOT . '/home.php';
 
