@@ -16,7 +16,7 @@
             title = :title,
             slug = :slug,
             body = :body,
-            updated = :NOW()
+            updated = NOW()
           WHERE id = :id
     ");
 
