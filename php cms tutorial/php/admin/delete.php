@@ -3,13 +3,13 @@
   require '../app/start.php';
 
   if (isset($_GET['id'])) {
-    $deletePage = $con->("
+    $deletePage = $con->prepare("
       DELETE FROM pages
       WHERE id = :id
     ");
 
     $deletePage->execute([
-      'id' => $_GET['id'];
+      'id' => $_GET['id']
     ]);
   }
 
