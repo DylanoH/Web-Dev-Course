@@ -27,31 +27,8 @@ $(document).ready(function(){
     randomQuote();
   });
 
-
-
-
 });
 
-//////////////////// different attempt ///////////////////////////////////
-
-
-// $(document).ready(function(){
-//
-//   $("#quoteButton").on("click", function(){
-//
-//     var url = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback="
-//
-//     $.ajaxSetup ({cache:false});
-//
-//     $.getJSON(url, function(data){
-//       var post = data.shift();
-//
-//       $(".quotesText").html(post.content);
-//       $(".quotesAuthor").html(post.title);
-//
-//     }); //getJSON end
-//   }); // button click end
-// }); // doc ready end
 
 //////////////////// different attempt ///////////////////////////////////
 
